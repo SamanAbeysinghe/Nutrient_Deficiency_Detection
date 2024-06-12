@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Black Pepper</title>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+     
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+   
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+     
+    
+<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+</head>
+
+<body style="background-image:url('{{ url_for('static', filename='img/istockphoto-1148634928-612x612.jpg') }}');background-repeat: no-repeat;background-position: center;background-attachment: fixed;  background-size: 120vh;">
+
+<div class="container-fluid px-5 d-none d-lg-block"  style="background-color: white">
+    <div class="row gx-5 py-3 align-items-center">
+        <div class="col-lg-3">
+            <div class="d-flex align-items-center justify-content-start">
+                
+                <h2 class="mb-0"></h2>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center justify-content-center">
+                
+                <a href="{{url_for('index')}}" class="navbar-brand ms-lg-5">
+                    <h1 class="m-0 display-5 text-primary"><span class="text-secondary">Nutrient Deficiency Detection </span><span class="text-black">Black Pepper</span></h1>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="d-flex align-items-center justify-content-end ">
+                <a class="btn btn-icon btn-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-icon btn-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-icon btn-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-icon btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-5" style="background-color:#2BAED8B2; color: #3487ad; z-index: 99">
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto py-0">
+            <a href="{{url_for('index')}}" class="nav-item nav-link active">Home</a>
+            <a href="{{url_for('test')}}" class="nav-item nav-link">Identification of Deficiency</a>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="mx-auto text-center mb-5">
+            <div class="col-lg-12 pb-5">
+                <div class="mb-3 pb-2">
+                    <h1 class="display-5 header" style=" text-shadow: 0px 0px 5px #ffffff;">Introduction</h1>
+                </div>
+                <div class="row gx-5 gy-4">
+                    <div class="col-sm-12">
+                        <p class="mb-0 paragraph" style="color: #000000; text-shadow: 0px 0px 4px #ffffff; font-size: larger; margin-top: 20px;">
+                            Black pepper requires large quantities of nutrients to maintain favorable vegetative growth and yield. It has been estimated that the nutrient uptake of a mature stand of pepper amounts to 202Kg of N, 13Kg of P, 156kg of K, 18 kg of Mg and 68Kg of Ca per hectare. Pepper is mainly grown on the red yellow podzolic group of soils which have low to very low supply of plant nutrients and are very acidic. Adequate fertilizer application, soil conservation and other cultivation management are therefore essential for successful cultivation of this group.
+                        </p>
+                        <h4 class="header" style=" text-shadow: 0px 0px 5px #ffffff;margin-top: 60px;">1. Chlorosis- Nitrogen deficiency</h4>
+                        <p class="mb-0 paragraph" style="color: #000000; text-shadow: 0px 0px 4px #ffffff; font-size: larger; margin-top: 20px;">
+                            Nitrogen deficiency is generally characterized by poor growth with pale and yellowish leaves. At first lower leaves turn yellowish but the upper canopy of affected vines tends to be greener. In severe cases leaves of the entire vine show a characteristic yellow to orange yellow discoloration and the extreme end of the leaf tip becomes necrotic in some instances.
+                        </p>
+                        <h4 class="header" style=" text-shadow: 0px 0px 5px #ffffff;margin-top: 60px;">2. Phosphorous deficiency</h4>
+                        <p class="mb-0 paragraph" style="color: #000000; text-shadow: 0px 0px 4px #ffffff; font-size: larger; margin-top: 20px;">
+                            Clear symptoms are often rare in the field. In severe cases, the most striking symptom is stunted growth of the vine This effect is not so much of reduced terminal growth but more of restricted lateral growth due to poor secondary branching. Leaf blades of mature leaves become dull looking, turning bronzy in color.
+                        </p>
+                        <h4 class="header" style=" text-shadow: 0px 0px 5px #ffffff;margin-top: 60px;">3. Potassium deficiency </h4>
+                        <p class="mb-0 paragraph" style="color: #000000; text-shadow: 0px 0px 4px #ffffff; font-size: larger; margin-top: 20px;">
+                            The distal end of affected mature leaf blades is necrotic, brittle and gray in color. Necrosis is usually confined to the distal end while the portion beyond the boundary, separating necrotic and live tissues, displays a ‘V’ shape band which is yellow to reddish brown color. This band sometimes occurs without the ‘tip burn’ symptom.
+                        </p>
+                        <h4 class="header" style=" text-shadow: 0px 0px 5px #ffffff;margin-top: 60px;">4. Magnesium deficiency</h4>
+                        <p class="mb-0 paragraph" style="color: #000000; text-shadow: 0px 0px 4px #ffffff; font-size: larger; margin-top: 20px;">
+                            Symptoms first appear in older leaves and progress to younger leaves. In the early stage, chlorosis occurs in between main veins. This usually starts from the central proximal half of the leaf.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-footer bg-primary text-white mt-5">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-8 col-md-6">
+                <div class="row gx-5">
+                    <div class="col-lg-6 col-md-12 pt-5 mb-5">
+                        <h4 class="text-white mb-4">Get In Touch</h4>
+                        <div class="d-flex mt-4">
+                            <a class="btn btn-secondary btn-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-secondary btn-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-secondary btn-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-secondary btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="index.html"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
+                            <a class="text-white mb-2" href="varieties.html"><i class="bi bi-arrow-right text-white me-2"></i>Identification of Deficiency</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-lg-n5">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-secondary p-5">
+                    <p>Join us to know the latest details about Pepper</p>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                            <button class="btn btn-primary">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
